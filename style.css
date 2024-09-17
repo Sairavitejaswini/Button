@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+}
+rotate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 450px;
+    background-color: grey;
+    overflow: hidden;
+    border-radius: 100px;
+    position: relative;
+    #rotating-line{
+        height: 500px;
+        width: 900px;
+        rotate: -30deg;
+        background: linear-gradient(rgb(235, 28, 131),rgb(36, 211, 211));
+        animation-name: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+ @keyframes rotate{
+    0%{
+        transform: rotate(odeg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+ button{
+    position: absolute;
+    height: 143px;
+    width: 443px;
+    border-radius: 100px;
+    border: none;
+    font-size: 50px;
+    color: blue;
+ }
+ button:hover{
+    background-color: rgba(60, 152, 189, 0.34);
+    color: white;
+
+ }
